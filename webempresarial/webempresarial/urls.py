@@ -17,13 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views as cv #coreviews
+from services import views as sv #services
 from django.conf import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", cv.index,name="home"),
     path("about/", cv.about,name="about"),
-    path("services/", cv.services,name="services"),
+    path("services/", sv.services,name="services"),
     path("store.html/", cv.store,name="store"),
     path("contact/", cv.contact,name="contact"),
     path("blog/", cv.blog,name="blog"),
