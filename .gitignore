@@ -2,3 +2,5 @@ Pipfile
 *.pyc
 .vscode/settings.json
 *.webp
+Pipfile.lock
+*.jpg
