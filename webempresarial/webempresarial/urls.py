@@ -16,17 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from core import views as cv #coreviews
-from services import views as sv #services
 from django.conf import settings
 
 urlpatterns = [
     path('', include('core.urls')),
     path('services/', include('services.urls')),
+    path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls)
 ]
-
-
 
 if settings.DEBUG:
     from django.conf.urls.static import static

@@ -14,7 +14,6 @@ class Service(models.Model):
     class Meta: # cuando se llame a esta clase cómo tipo de objeto, 
         verbose_name = "servicio"
         verbose_name_plural = "servicios"
-        ordering = ["-created"]
         ordering = ["-created"] # el "-"  indica que es desde el más nuevo al más antiguo
     
     def __str__(self):
