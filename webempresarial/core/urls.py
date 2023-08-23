@@ -6,5 +6,4 @@ urlpatterns = [
     path("about/", cv.about,name="about"),
     path("store/", cv.store,name="store"),
     path("contact/", cv.contact,name="contact"),
-    path("sample/", cv.sample,name="sample"),
 ]
